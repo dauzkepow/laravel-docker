@@ -25,7 +25,7 @@ jobs:
           # secrets.GIT_TOKEN =  key agar github mengenali pc lokal kita
           # @github.com/nama_repo dari githubnya
           script: |
-            REPO="https://${{ secrets.GIT_TOKEN }}@github.com/dirumahrafif/laravel-docker.git"
+            REPO="https://${{ secrets.GIT_TOKEN }}@github.com/dauzkepow/laravel-docker.git"
             DIR="${{ secrets.VPS_PATH }}"
             CONTAINER="laravel_app"
             BRANCH="deploy-github"
