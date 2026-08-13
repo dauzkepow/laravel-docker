@@ -21,6 +21,7 @@ jobs:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
+          port: 7744
           # penyesuaian #
           # secrets.GIT_TOKEN =  key agar github mengenali pc lokal kita
           # @github.com/nama_repo dari githubnya
@@ -28,7 +29,7 @@ jobs:
             REPO="https://${{ secrets.GIT_TOKEN }}@github.com/dauzkepow/laravel-docker.git"
             DIR="${{ secrets.VPS_PATH }}"
             CONTAINER="laravel_app"
-            BRANCH="deploy-github"
+            BRANCH="main"
 
             # Proses instalasi git, jika belum ada
             echo "Cek git"
